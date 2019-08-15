@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+
+    
+</head>
+
+<body>
+
+        <div class="container" >
+                <form method="POST" action="https://formspree.io/reservas@lavitrehotel.com.br" >
+                
+                                               
+                        <h4 class="form-text display-4  text-center text-primary">Cadastro Pessoal</h4>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input class="form-control" type="text" name="nome"placeholder="Nome Completo"  id="nome" required="required">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cpf">CPF</label>
+                            <input class="form-control"  type="text" name="cpf" placeholder="123.456.789-00" id="cpf" required="required" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rg">RG</label>
+                            <input class="form-control"  type="text" name="rg" id="rg" placeholder="Registro Geral" required="required">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="org_exp">Orgão Emissor</label>
+                            <input class="form-control"  type="text" name="org_exp" id="org_exp" placeholder="ssp, oab">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="data_nascimento">Data de Nascimento</label>
+                            <input class="form-control"  type="date" name="data_nascimento" id="data_nascimento">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input class="form-control"  type="email" id="email" name="email" placeholder="Email Principal">
+                            <small class="form-text text-muted">Seu e-mail não será compartilhado</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cep">CEP</label>
+                            <input class="form-control"  type="text" id="cep" name="cep" placeholder="12345-678" required="required" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="endereco">Endereço</label>
+                            <input class="form-control"  type="text" name="endereco" id="endereco" placeholder="Rua, Av." required="required">
+
+                            <label for="numero">Numero</label>
+                            <input class="form-control"  type="text" name="numero "id="numero" placeholder="S/N">
+                        </div class="form-group">
+
+                        <div class="form-group">
+                            <label for="complemento">Complemento</label>
+                            <input class="form-control"  type="texto" id="complemento" name="complemento" placeholder="QD. Lt. APT">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cidade">Cidade</label>
+                            <input class="form-control"  type="text" name="cidade" id="cidade" required="required">
+                        </div>
+
+                        <div class="form-group">
+                                <label for="estado">Estado</label>
+                                <select class="form-control" id="estado" name="estado" required="required">
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO" selected>Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                        <option value="ES">Estrangeiro</option>
+                                    </select>
+
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone de Contato</label>
+                            <input class="form-control"  type="tel" id="telefone" name="telefone" placeholder="(DDD) 9 9999 - 9999" required="required">
+
+                        </div>
+                        
+                        <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="3" name="mensagem"  placeholder="Digite uma mensagem ..."></textarea>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="arquivos">Enviar Arquivos</label>
+                            <input  class="form-control btn btn-warning" name="arquivos" type="file" id="arquivos" >
+                            <small class="form-text text-muted">Tamanho máximo de 3Mb</small>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <a id="btn_voltar" href="index.html"><button type="button" class="btn btn-danger">Voltar</button></a>
+
+                                        
+                                  
+                </div>            
+                      	
+              
+                </form>
+        </div>
+        
+
+    
+</body>
+</html>
