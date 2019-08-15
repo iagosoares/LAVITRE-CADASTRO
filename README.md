@@ -1,1 +1,1 @@
-# Ficha-Cadastral-Hotel-La-Vitre
+Com intuito de facilitar e antecipar o cadastro dos hospedes antes mesmo de chegarem no hotel, foi criado uma pagina web que possibilita o cadastro pessoal com o minimo de informações necessarias para abrir a conta no sistema do hotel. Foi utilizado o Framework Boostrap 4.
