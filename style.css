@@ -1,0 +1,51 @@
+.container{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;    
+    height: 100vh;
+    text-align: center;
+    
+    
+}
+
+.caixa{
+ max-width: 500px;
+}
+
+#roxo{
+    color: rgb(103,58,183);
+}
+
+
+h1{
+    display: inline;
+    text-align: center;    
+    font-size: 5rem;
+}
+
+p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.btn-cadastro{    
+    border: none;  
+    margin-top: 2rem;
+    background-color: white;
+    
+
+}
+
+img{
+    max-width: 50px;
+}
+
+.btn-cadastro a{
+    text-decoration: none;
+    color: white
+}
+
