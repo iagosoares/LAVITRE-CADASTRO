@@ -1,4 +1,7 @@
-.container{
+
+/* PAGINA PRINCIPAL index*/
+
+.container-index{
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -10,50 +13,51 @@
     
 }
 
-
-.container-form{
-              
-    background: url("../imagens/back.png") repeat;
-    background-color: rgb(10, 10, 10);
-    width: 100%;
-    min-height:100vh;
-
-}
 .caixa{
- max-width: 500px;
-}
+    max-width: 500px;
+   }
+   
+   #roxo{
+       color: rgb(103,58,183);
+   }
+   
+   
+   h1{
+       display: inline;
+       text-align: center;    
+       font-size: 5rem;
+   }
+   
+   p{
+       text-align: center;
+       margin-top: 2rem;
+       font-size: 1.2rem;
+   }
+   
+   .btn-cadastro{    
+       border: none;  
+       margin-top: 2rem;
+       background-color: white;
+       
+   
+   }
+   
+   img{
+       max-width: 50px;
+   }
+   
+   .btn-cadastro a{
+       text-decoration: none;
+       color: white
+   }
 
-#roxo{
-    color: rgb(103,58,183);
-}
 
 
-h1{
-    display: inline;
-    text-align: center;    
-    font-size: 5rem;
-}
 
-p{
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-}
 
-.btn-cadastro{    
-    border: none;  
-    margin-top: 2rem;
-    background-color: white;
-    
 
-}
 
-img{
-    max-width: 50px;
-}
 
-.btn-cadastro a{
-    text-decoration: none;
-    color: white
-}
+ 
+
 
