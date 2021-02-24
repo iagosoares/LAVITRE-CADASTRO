@@ -11,150 +11,199 @@
 
 <body>
 
-    
+
     <div id="main-container">
-
-        <h1>DADOS PESSOAIS</h1>
-        <form action="" id="register-form">
-
-            <fieldset>
-                <label for="nome">Nome Completo</label>
-                <input type="text" name="nome" placeholder="Nome Completo" id="nome" required="required">
-
-                <label for="data_nascimento">Data de Nascimento</label>
-                <input type="date" name="data_nascimento" id="data_nascimento">
-
-            </fieldset>
-
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email Principal">
-
-                <label for="telefone">Telefone de Contato</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 9 9999 - 9999" required="required">
-
-            </fieldset>
+       
 
 
 
-            <fieldset>
+        <div class="form">
+            <div class="titulo">
+                <h1>DADOS PESSOAIS</h1>
+            </div>
+    
 
-                <label for="cpf">CPF</label>
-                <input type="text" name="cpf" placeholder="123.456.789-00" id="cpf" required="required">
-                <br>
-                <label for="rg">RG</label>
-                <input type="text" name="rg" id="rg" placeholder="Registro Geral" required="required">
-
-
-                <label for="org_exp">Orgão Emissor</label>
-                <input type="text" name="org_exp" id="org_exp" placeholder="ssp, oab">
-
-            </fieldset>
+            <form action="" id="register-form">
 
 
-            <fieldset>
 
-                <label for="cep">CEP</label>
+                <div class="campos campo-nome">
 
-                <input type="text" id="cep" name="cep" placeholder="12345-678" required="required">
-                <br>
+                    <div>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" name="nome" placeholder="Nome Completo" id="nome" required="required">
 
+                    </div>
 
-                <label for="endereco">Endereço</label>
-                <input type="text" name="endereco" id="endereco" placeholder="Rua, Av." required="required">
+                    <div>
+                        <label for="data_nascimento">Data de Nascimento</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento">
 
+                    </div>
 
-                <div class="dois">
-                    <label for="numero">Numero</label>
-                    <input type="text" name="numero " id="numero" placeholder="S/N">
-                    <label id="complemento_margin" for="complemento">Complemento</label>
-                    <input type="texto" id="complemento" name="complemento" placeholder="QD. Lt. APT">
 
                 </div>
-                <br>
 
 
 
 
-                <div class="dois">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" name="cidade" id="cidade" required="required">
 
 
 
-                    <label id="estado_margin" for="estado">Estado</label>
-                    <select id="estado" name="estado" required="required">
-                        <option value="" selected="selected" disabled></option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                        <option value="ES">Estrangeiro</option>
-                    </select>
+
+
+                <div class="campos campo-contato">
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email Principal">
+
+                    </div>
+
+                    <div>
+
+                        <label for="telefone">Telefone de Contato</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 9 9999 - 9999"
+                            required="required">
+
+                    </div>
+
+
+
                 </div>
 
-            </fieldset>
 
-            <fieldset>
-                <div class="form-mensagem">
+
+
+                <div class="campos campo-indentificacao">
+
+                    <div>
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" placeholder="123.456.789-00" id="cpf" required="required">
+                    </div>
+                    <div>
+                        <label for="rg">RG</label>
+                        <input type="text" name="rg" id="rg" placeholder="Registro Geral" required="required">
+                    </div>
+                    <div>
+                        <label for="org_exp">Orgão Emissor</label>
+                        <input type="text" name="org_exp" id="org_exp" placeholder="ssp, oab">
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="campos campo-endereco">
+
+                    <div>
+
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep" placeholder="12345-678" required="required">
+                        <br>
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Rua, Av." required="required">
+                        <br>
+                        <label for="numero">Numero</label>
+                        <input type="text" name="numero " id="numero" placeholder="S/N"><br>
+                        <label id="complemento_margin" for="complemento">Complemento</label>
+                        <input type="texto" id="complemento" name="complemento" placeholder="QD. Lt. APT">
+
+                    </div>
+
+
+
+                    <div>
+
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" required="required">
+                        <br>
+
+                        <label id="estado_margin" for="estado">Estado</label>
+                        <select id="estado" name="estado" required="required">
+                            <option value="" selected="selected" disabled></option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="ES">Estrangeiro</option>
+                        </select>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="campos campo-mensagem">
+
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" rows="3" name="mensagem" style="width: 26em;"
                         placeholder="Digite uma mensagem ..."></textarea>
-                </div>
-
-            </fieldset>
-
-
-            <fieldset>
-
-                <div>
-                    <label for="arquivos">Enviar Arquivos</label>                    
-                    <input  id="input-entrada" name="arquivos" type="file" id="arquivos">
-                    <small >Tamanho máximo de 3Mb</small>
 
                 </div>
 
 
 
-            </fieldset>
 
 
-            <button id="botao" type="submit">Enviar</button>
 
+                <div class="campos">
+                    <label for="arquivos">Enviar Arquivos</label>
+                    <input id="input-entrada" name="arquivos" type="file" id="arquivos">
+                    <small>Tamanho máximo de 3Mb</small>
+
+                </div>
+
+
+                <button id="botao" type="submit">Enviar</button>
+
+
+
+        </div>
 
 
         </form>
 
 
-        
-
-
-
 
     </div>
+
 
 </body>
 
