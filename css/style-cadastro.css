@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background: white
+    padding: 0 10px;
+}
+
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    background-color :rgba(0,0,0,0.9);
+    margin: 2rem auto;
+    padding: 30px;
+    border: 1px solid #fec107;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+
+.wrapper .title{
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #FEC107;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.wrapper .form{
+    width: 100%;
+    
+}
+
+.wrapper .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.wrapper .form .input_field label{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    color : #fec107;
+    margin-right: 10px;
+    font-size:0.9em;
+}
+
+.wrapper .form .input_field .input, .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 1em;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form .input_field .textarea{
+    resize: none;
+    height: 125px;
+
+
+}
+
+.wrapper .form .input_field .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+    background-color : purple;
+}
+
+.wrapper .form .input_field .custom_select select{
+    
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .input_field .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent ;
+    pointer-events: none;
+}
+
+.wrapper .form .input_field .input:focus,
+.wrapper .form .input_field select:focus,
+.wrapper .form .input_field .textarea:focus{
+    border: 1px solid #fec107;
+
+}
+
+.wrapper .form .input_field p{
+    font-size: 0.8em;
+    color: #757575;
+}
+
+.wrapper .form .input_field .check{
+    width: 15px;
+    height: 15px;   
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+.wrapper .form .input_field .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fec107;
+    display: block;
+    position: relative;
+    
+    
+
+}
+
+.wrapper .form .input_field .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+    
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #fec107;
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+}
+
+
+.wrapper .form .input_field .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #fec107;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+
+
+}
+
+
+.wrapper .form .input_field:last-child{
+    margin-bottom: 0;
+}
+
+
+.wrapper .form .input_field .btn:hover{
+    background: #ffd658;
+}
+
+@media (max-width: 800px){
+    .wrapper {
+        max-width: 100%;
+        width: 100%;
+        background-color :rgba(0,0,0,0.9);
+        margin: 2rem auto;
+        padding: 30px;
+        border: 1px solid #fec107;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    }
+
+    .wrapper .form .input_field label{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-start;
+        color : #fec107;
+        margin-right: 10px;
+        font-size:1.2em;
+    }
+
+}
+
+@media (max-width: 555px){
+
+    .wrapper {
+        min-width: 555px;
+        width: 100%;
+        background-color :rgba(0,0,0,0.9);
+        margin: 2rem auto;
+        padding: 30px;
+        border: 1px solid #fec107;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    }
+
+    .wrapper .form .input_field label{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-start;
+        color : #fec107;
+        margin-right: 10px;
+        font-size:1.2em;
+    }
+}
+
+
+
